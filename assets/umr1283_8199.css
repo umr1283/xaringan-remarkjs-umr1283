@@ -20,7 +20,6 @@ body {
   font-size: 80%;
 }
 
-
 .side-logo {
   content: "";
   position: absolute;
@@ -230,6 +229,7 @@ blockquote {
 th, td {
   padding: 5px;
 }
+
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
   background: #eee
 }
@@ -237,6 +237,7 @@ th, td {
 @page {
   margin: 0;
 }
+
 @media print {
   .remark-slide-scaler {
     width: 100% !important;
