@@ -27,15 +27,13 @@ output:
 options("width" = 110)
 options(htmltools.dir.version = FALSE)
 
-
-### Load Packages ==================================================================================
 suppressPackageStartupMessages({
   library(here)
   library(knitr)
 
   library(data.table)
   
-  # library(ragg)
+  library(ragg)
   library(svglite)
   library(showtext)
   
