@@ -47,6 +47,16 @@ suppressPackageStartupMessages({
   library(targets)
   library(katex)
 })
+
+# tar_render(umr1283_8199.Rmd,
+#   path = here("scripts/slides/umr1283_8199.Rmd"),
+#   output_dir = here("reports"),
+#   packages = c(
+#     "xaringan",
+#     "here", "knitr", "data.table", "ragg", "svglite", "showtext", "ggplot2",
+#     "ggtext", "patchwork", "scales", "gt", "targets", "katex"
+#   )
+# )
 ```
 
 ```{r setup-knitr, include = FALSE}
