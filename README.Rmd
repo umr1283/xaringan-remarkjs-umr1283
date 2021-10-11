@@ -8,7 +8,7 @@ output: github_document
 [![License](https://img.shields.io/github/license/mcanouil/xaringan-template)](LICENSE)
 <!-- badges: end -->
 
-This is a repository template for `xaringan` slides based on a template by [Mickaël Canouil](@mcanouil) (https://github.com/mcanouil/xaringan-template/).
+This is a repository template for `xaringan` slides based on a template by [Mickaël Canouil](https://mickael.canouil.fr/) (https://github.com/mcanouil/xaringan-template/).
 
 ```{r, include = FALSE}
 library(magick)
