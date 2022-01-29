@@ -77,10 +77,10 @@ opts_chunk$set(
 )
 ```
 
-```{r setup-ggplot2, code = source(here("assets/setup-ggplot2.R")), include = FALSE}
+```{r setup-ggplot2, file = assets/setup-ggplot2.R", include = FALSE}
 ```
 
-```{r setup-gt, code = source(here("assets/setup-gt.R")), include = FALSE}
+```{r setup-gt, file = "assets/setup-gt.R", include = FALSE}
 ```
 
 ```{r functions, include = FALSE}
