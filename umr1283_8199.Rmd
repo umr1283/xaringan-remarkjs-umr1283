@@ -6,14 +6,13 @@ author: "Firstname Lastname"
 # author: '`r # targets::tar_read(author)`'
 institute: "_Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université de Lille_"
 date: '`r format(Sys.time(), "%A, the %d of %B, %Y")`'
-knit: (function(inputFile, encoding) rmarkdown::render(inputFile, encoding = encoding, output_file = "docs/index.html"))
 params:
   content: ['content/content.Rmd']
 output:
   xaringan::moon_reader:
     self_contained: true
     mathjax: null
-    css: [assets/umr1283_8199.css, https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css]
+    css: [assets/umr1283_8199.css, https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css]
     includes:
       in_header: assets/_scripts.html
     nature:
@@ -49,7 +48,7 @@ suppressPackageStartupMessages({
 })
 
 # tar_render(umr1283_8199.Rmd,
-#   path = here("scripts/slides/umr1283_8199.Rmd"),
+#   path = here("slides/umr1283_8199.Rmd"),
 #   output_dir = here("reports"),
 #   packages = c(
 #     "xaringan",
@@ -77,7 +76,7 @@ opts_chunk$set(
 )
 ```
 
-```{r setup-ggplot2, file = assets/setup-ggplot2.R", include = FALSE}
+```{r setup-ggplot2, file = "assets/setup-ggplot2.R", include = FALSE}
 ```
 
 ```{r setup-gt, file = "assets/setup-gt.R", include = FALSE}
