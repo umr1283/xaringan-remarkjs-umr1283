@@ -154,19 +154,21 @@ theme_umr <- function(
   )
 }
 ggplot2::theme_set(theme_umr(base_size = 18, base_family = "Verdana"))
-ggplot2::theme_update(
-  plot.title.position = "plot",
-  plot.caption.position = "plot",
-  plot.title = ggtext::element_markdown(),
-  plot.subtitle = ggtext::element_markdown(face = "italic", size = ggplot2::rel(0.80)),
-  plot.caption = ggtext::element_markdown(face = "italic", size = ggplot2::rel(0.65)),
-  axis.title.x = ggtext::element_markdown(),
-  axis.text.x = ggtext::element_markdown(),
-  axis.text.x.top = ggtext::element_markdown(),
-  axis.title.y = ggtext::element_markdown(),
-  axis.text.y = ggtext::element_markdown(),
-  axis.text.y.right = ggtext::element_markdown()
-)
+
+if (nzchar(system.file(package = "ggtext"))) {
+  ggplot2::theme_update(
+    plot.title = ggtext::element_markdown(),
+    plot.subtitle = ggtext::element_markdown(face = "italic"),
+    plot.caption = ggtext::element_markdown(face = "italic"),
+    axis.title.x = ggtext::element_markdown(),
+    axis.text.x = ggtext::element_markdown(),
+    axis.text.x.top = ggtext::element_markdown(),
+    axis.title.y = ggtext::element_markdown(),
+    axis.text.y = ggtext::element_markdown(),
+    axis.text.y.right = ggtext::element_markdown()
+  )
+}
+ggplot2::update_geom_defaults("point", list(colour = ggplot2::theme_get()$line$colour))
 
 options(
   ggplot2.discrete.colour = function(...) ggplot2::scale_colour_viridis_d(..., begin = 0.15, end = 0.85),
